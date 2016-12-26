@@ -112,8 +112,8 @@ public class ContactsManager extends ReactContextBaseJavaModule {
             phonesLabels = new Integer[numOfPhones];
             for (int i = 0; i < numOfPhones; i++) {
                 phones[i] = phoneNumbers.getMap(i).getString("number");
-                String label = phoneNumbers.getMap(i).getString("label");
-                phonesLabels[i] = mapStringToPhoneType(label);
+                // String label = phoneNumbers.getMap(i).getString("label");
+                // phonesLabels[i] = mapStringToPhoneType(label);
             }
         }
 
@@ -127,8 +127,8 @@ public class ContactsManager extends ReactContextBaseJavaModule {
             emailsLabels = new Integer[numOfEmails];
             for (int i = 0; i < numOfEmails; i++) {
                 emails[i] = emailAddresses.getMap(i).getString("email");
-                String label = emailAddresses.getMap(i).getString("label");
-                emailsLabels[i] = mapStringToEmailType(label);
+                // String label = emailAddresses.getMap(i).getString("label");
+                // emailsLabels[i] = mapStringToEmailType(label);
             }
         }
 
